@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "ChatGPT Token Counter",
+  "version": "1.0",
+  "description": "Displays a floating progress bar showing the number of tokens used in the current ChatGPT session.",
+  "icons": {
+    "48": "icon48.png"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://chatgpt.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [{
+    "resources": [],
+    "matches": ["https://chatgpt.com/*"]
+  
+  }],
+  "author": "Your Name",
+  "homepage_url": "https://adestefa.github.io/GitServer/", 
+  "license": "MIT"  
+}

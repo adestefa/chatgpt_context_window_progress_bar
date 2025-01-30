@@ -222,15 +222,16 @@
 
                 // Define model to token limit mapping
                 const modelTokenMap = {
-                    'gpt-4': 8192,
-                    'o1': 32000,
-                    'o1-mini': 64000
+                    '4o': 8192,
+                    'o1-mini': 64000,
+                    'o1': 32000
+                    
                 };
 
                 // Find the matching token limit
                 let newTokenLimit = this.tokenLimit; // Default to current limit
                 for (const [model, limit] of Object.entries(modelTokenMap)) {
-                    if (modelName.includes(model.toLowerCase())) {
+                    if (modelName.indexOf(model.toLowerCase())!== -1) {
                         console.log(modelName + " Found!");
                         newTokenLimit = limit;
                         break;

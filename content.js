@@ -116,7 +116,7 @@
 
             // Create title for the progress bar
             const title = document.createElement('div');
-            title.innerText = 'ChatGPT Context Window';
+            title.innerText = 'Context Window';
             Object.assign(title.style, {
                 marginBottom: '8px',
                 fontWeight: 'bold'

@@ -7,10 +7,15 @@
 - Use to monitor available memory
 - Unlock the most accurate responses
 
-+--------------------------------------+
-| ChatGPT Token Usage                  |
-| [██████████░░░░░░░░░░░░░░░░░░░░░]   |
-| 4500 / 8192 tokens                   |
-+--------------------------------------+
+
+Context Window                
+
+| [██████████░░░░░░░░░░░░░░░░░░░░░]   
+
+| 4500 / 8192 tokens                   
+
+
+
+
 
 
